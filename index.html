@@ -1,495 +1,661 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Sri Madhwa Vadiraja Institute Of <br>Technology And Management, Bantakal</title>
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/all.min.css">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <style>
-
-        .team-main-box img {
-            width: 100%; 
-            height: 300px; 
-            object-fit: cover; 
-        }
-        .blog-content img{
-            width: 100%; 
-            height: 300px; 
-            object-fit: cover;
-        }
-
-        </style>
-</head>
-
-<body>    
-    <header>
-        <div class="my-nav">
-            <div class="container">
-                <div class="row">
-                    <div class="nav-items">
-                        <div class="menu-toggle"></div>
-                        <div class="logo">
-                            <img class="hide-scrol" src="assets/images/logo12.png">
-                            <br>
-                            
-                
-                            <h2>SMVITM Bantakal</h2>
-                            
-                        </div>
-                           
-                        <div class="menu-items">
-                            <div class="menu">
-                                <ul>
-                                    <li><a href="about-us.html">About</a></li>
-                                    <li><a href="http://127.0.0.1:5500/webcraft/index.html">Tour</a></li>
-                                    <li><a href="blog.html">Article</a></li>
-                                    <li><a href="http://localhost/HostelManagement-PHP/">Hostel</a></li>
-
-                                    <li><a href="http://127.0.0.1:3002/timetable/index.html">Time Table</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </header>
+	<head>
+		<!--projecttitle--><title>Smvitm</title><!--projecttitle-end-->
+		<!--projectdescription--><meta name="description" content="New 3Sixty Virtual Tour Project"><!--projectdescription-end-->
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta charset="utf-8">
+		<meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width, shrink-to-fit=no">
+		
+		<link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+		<link rel="stylesheet" type="text/css" href="style.css">
+		
+		<!-- Insert this line above script imports  -->
+		<script>if (typeof module === 'object') {window.module = module; module = undefined;}</script>
+		
+		<script src="imagedata.js"></script>
+		<script src="jquery.js"></script>
+		<script src="three.min.js"></script>
+		<script src="panolens.min.js"></script>
+		
+		<!-- Insert this line after script imports -->
+		<script>if (window.module) module = window.module;</script>
+		
+		<style>
+		
+			
+						
+			/* SCROLLBAR STYLING */
+			/* width */
+			::-webkit-scrollbar {
+				width: 0.25em;
+				height: 0.25em;
+			}
+			/* Track */
+			::-webkit-scrollbar-track {
+				background: #2c3643; 
+			}
+			/* Handle */
+			::-webkit-scrollbar-thumb {
+				background: #0d9e59; 
+				transition: background .5s;
+			}
+			/* Handle on hover */
+			::-webkit-scrollbar-thumb:hover {
+				background: #00e075; 
+			}
 
 
+			html, body {
+				margin: 0;
+				width: 100%;
+				height: 100%;
+				overflow: hidden;
+				background-color: #000;
+				color:#000;
+			}
 
-    <section class="banner">
-        <div class="banner-wrapper-main"></div>
-        <div class="container">
-            <div class="row">
-                <div class="slider-wrapper">
-                    <div class="box-01">
-                        <div class="content">
-                            <br>
-                            <br>
-                            <!-- <h1>Wellness Hub</h1> -->
-<p>SMVITM in Bantakal is a leading institute for technology and management education. Offering diverse programs aligned with industry standards, it provides a holistic learning environment with modern infrastructure and a mentorship-focused faculty. Prioritizing placements, the institute ensures students are well-prepared for the professional realm. Recognizing the importance of extracurriculars, SMVITM encourages participation in various activities. With a vision to produce globally competent professionals, the institute actively contributes to societal development. For the latest information, visit the official website or contact SMVITM directly. </p>
-                            <div class="btn-001">
-                                <ul>
-                                    <li><a href="#"></a></li>
-                                    <li><a href="#"></a></li>
-                                    <li><a href="#"></a></li>
+			a:link, a:visited{
+				color: #bdc3c7;	
+			}
 
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="box-01">
-                        <div class="slider-image">
-                            <img src="assets/images/slider/1.png">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="bg-01">
-        <div class="container">
-            <div class="row">
-                <div class="heading">
-                    <h2>Various Domains</h2>
-                    <span></span>
-                </div>
-
-                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-                    <div class="category-box">
-                        <div class="my-card">
-                            <ul>
-                                <li>
-                                    <img src="assets/images/icons/design.png">
-                                    <h3>Technical Teams</h3>
-                                    <p>Technical teams like Code Troopers from the department of Computer Science and Engineering, Ignite AI from the department of AI</p>
-
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-                    <div class="category-box">
-                        <div class="my-card">
-                            <ul>
-                                <li>
-                                    <img src="assets/images/icons/coin.png">
-                                    <h3>Business management</h3>
-                                    <p>
-                                        Business administration involves the effective management and coordination of resources, personnel, and operations to achieve organizational goals and success. </p>
-                
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-                    <div class="category-box">
-                        <div class="my-card">
-                            <ul>
-                                <li>
-                                    <img src="assets/images/icons/budget.png">
-                                    <h3>Accounting</h3>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                        Facilis molestias excepturi fugit, similique laborum necessitatibus?</p>
-                
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-                    <div class="category-box">
-                        <div class="my-card">
-                            <ul>
-                                <li>
-                                    <img src="assets/images/icons/monitor.png">
-                                    <h3>Library</h3>
-                                    <p>SMVITM's library likely offers a diverse collection of resources, including books and journals, to support academic studies. The facility likely provides a quiet and conducive environment for research and learning.</p>
-                
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-                    <div class="category-box">
-                        <div class="my-card">
-                            <ul>
-                                <li>
-                                    <img src="assets/images/icons/art.png">
-                                    <h3>Art and Design Club</h3>
-                                    <p>The Art and Design Club serves as a creative hub, fostering artistic expression and collaborative design projects within the community.</p>
-                
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-                    <div class="category-box">
-                        <div class="my-card">
-                            <ul>
-                                <li>
-                                    <img src="assets/images/icons/mail.png">
-                                    <h3>Marketing</h3>
-                                    <p>The marketing team strategically promotes products or services, employing various channels to reach target audiences and enhance brand visibility.</p>
-                
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-                    <div class="category-box">
-                        <div class="my-card">
-                            <ul>
-                                <li>
-                                    <img src="assets/images/icons/photo.png">
-                                    <h3>Virtual Tour </h3>
-                                    <p>Photography is a powerful medium for capturing moments, conveying emotions, and telling stories through visual artistry.</p>
-                
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-                    <div class="category-box">
-                        <div class="my-card">
-                            <ul>
-                                <li>
-                                    <img src="assets/images/icons/gym.png">
-                                    <h3>health fitness</h3>
-                                    <p>The gym is a dedicated space for physical fitness, providing a range of equipment and facilities to support exercise routines and promote a healthy lifestyle.</p>
-                
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-                    <div class="category-box">
-                        <div class="my-card">
-                            <ul>
-                                <li>
-                                    <img src="assets/images/icons/account.png">
-                                    <h3>lifestyle</h3>
-                                    <p>SMVITM fosters a balanced lifestyle for students, combining rigorous academic pursuits with extracurricular activities and a supportive community.</p>
-                
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-  <!-- ================**calculation Section**================ -->
-
-  <section class="bg-02">
-      <div class="container">
-          <div class="row">
-              <div class="col-lg-6 col-md-6 col-12">
-                  <div class="cal-box">
-<p>Welcome to SMVITM! Get ready for a transformative learning experience with quality education, innovative learning methods, and a dedicated faculty. Our state-of-the-art infrastructure and focus on holistic development ensure a well-rounded educational journey. Benefit from placement support and join a diverse community for a global perspective. SMVITM is not just an institution; it's a community that values your growth and success. Make the most of your time here—we wish you a fulfilling academic journey!</p>
-
-                            <ol>
-                                <li>
-                                    <div class="_lk_bg_cd">
-                                        <div class="counting" data-count="8">8</div>
-                                        <h5>Current departments</h5>
-                                    </div>
-                                </li>
-
-                                <li>
-                                    <div class="_lk_bg_cd">
-                                        <div class="counting" data-count="1255">1250</div>
-                                        <h5>Number of students</h5>
-                                    </div>
-                                </li>
-
-                                <li>
-                                    <div class="_lk_bg_cd">
-                                        <div class="counting" data-count="6">6</div>
-                                        <h5>Number of faculties</h5>
-                                    </div>
-                                </li>
-                            </ol>
-                  </div>
-              </div>
-
-              <div class="col-lg-6 col-md-6 col-12">
-                <div class="cal-box">
-                    <img src="assets/images/slider/2.png">
-                </div>
-              </div>
-          </div>
-      </div>
-  </section>
-
-    <section class="bg-03">
-        <div class="container">
-            <div class="row">
-                <div class="heading">
-                    <h2>our team</h2>
-                    <span></span>
-                </div>
-
-                <div class="col-lg-3 col-md-4 col-sm-6 col-6">
-                    <div class="team-main-box">
-                        <img src="pratham.jpg">
-                        <div class="team-content-box">
-                            <h3>Mr.Pratham L Kamath</h3>
-                            <b>President</b>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-3 col-md-4 col-sm-6 col-6">
-                    <div class="team-main-box">
-                        <img src="kh.jpg">
-                        <div class="team-content-box">
-                            <h3>Ms.Keerthana</h3>
-                            <b>Vice President</b>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-3 col-md-4 col-sm-6 col-6">
-                    <div class="team-main-box">
-                        <img src="nidhi.jpg">
-                        <div class="team-content-box">
-                            <h3>Ms. Nidhi Patkar</h3>
-                            <b>Secretary</b>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-3 col-md-4 col-sm-6 col-6">
-                    <div class="team-main-box">
-                        <img src="man.jpg">
-                        <div class="team-content-box">
-                            <h3>Mr. Manvith</h3>
-                            <b>Treasurer</b>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+			.fullwrapper{
+				position: fixed;
+				top: 0;
+				left: 0;
+				right: 0;
+				bottom: 0;
+				background-color: black;
+			}
+			
+			#container {
+                width: 100%;
+                height: 100%;
+            }
+			
+			#tmp{
+				position: fixed;
+				top: 0;
+				left: 0; 
+				right: 0;
+				bottom: 0;
+				padding: 3em;
+				background-color: rgba(0,0,0,.5);
+				backdrop-filter: blur(5px);
+				display: none;
+			}
+		</style>
+	</head>
+	<body id="body">
+	    <div id="container" style="color: black;"></div>
+    	
+		
+		
+		<!--customhtml--><div class='customhotspot' id='IMG_20231117_150232316'></div><div class='customhotspot' id='IMG_20231117_151234139'></div><div class='customhotspot' id='IMG_20231117_151513121'></div><div class='customhotspot' id='IMG_20231117_151829073'></div><div class='customhotspot' id='IMG_20231117_152044566'></div><div class='customhotspot' id='IMG_20231117_152451598'></div><div class='customhotspot' id='IMG_20231117_153114842'></div><div class='customhotspot' id='IMG_20231117_153256794'></div><div class='customhotspot' id='IMG_20231117_152934470'></div><div class='customhotspot' id='IMG_20231117_153506117'></div><div class='customhotspot' id='IMG_20231117_154833969'></div><div class='customhotspot' id='IMG_20231117_152738172'></div><!--customhtml-end-->
+		
+		<div id="tmp">
+			<div style="width: 100%; height: 100%; overflow: hidden; overflow-y: auto; box-sizing: border-box; position: relative;" id="tmpcontent"></div>
+			<div class="mediaclosebutton" onclick="hideTemp()"><i class="fa fa-times-circle"></i></div>
+		</div>
 
 
-    <section class="bg-04">
-        <div class="container">
-            <div class="row">
-                <div class="heading">
-                    <h2>our news</h2>
-                    <span></span>
-                </div>
+		<div id="loading" class="fullwrapper" style="display: table; width: 100%; height: 100%;">
+    		<div style="display: table-cell; vertical-align: middle; text-align: center; color: white; font-size: 30px; padding: 50px;">
+    			<!--loadingtext-->Loading...<!--loadingtext-end-->
+				<div id="loadingperc" style="font-size:12px;"></div>
+    		</div>
+    	</div>
+		
+    	<script>
+			
+            var container = document.querySelector( '#container' );
+			/*panolens*/
 
-                <div class="col-lg-4 col-md-4 col-sm-6 col-12">
-                    <article class="blog-sub">
-                        <div class="blog-content">
-                            <img src="../webcraft/cnc.png">
-                        </div>
-                        <div class="blog-content-section">
-                            <div class="blo-content-title">
-                                <h4>Professional Development Program</h4>
-                                <p>Department of Mechanical Engineering, Shri Madhwa Vadiraja Institute of Technology and Management, Bantakal  in association with ISTE student chapter has organized 30 hours Professional Development Program on “CNC Programming & Hands-on training” for the benefit of Mechanical Engineering students in the month of August-September 2023.
+var viewer = new PANOLENS.Viewer( { container: container , controlBar: true,  output: 'console' , autoHideInfospot: false, } );
 
-                                    The Principal Dr. Thirumaleshwara Bhat inaugurated the program. In his address, he explained the importance of value added programs along with the regular academics. Also, appreciated the efforts of the organizers for planning a useful program for the benefit of the students. The course consisted of both theory sessions as well as hands on sessions with CNC machines.</p>
-                            </div>
-                            <div class="blog-admin">
-                                <ol>
-                                    <li><i class="fal fa-user-tie"></i> By Admin</li>
-                                    <li><i class="fal fa-calendar-alt"></i> Sept 28, 2023</li>
-                                </ol>
-                            </div>
-                        </div>
-                    </article>
-                </div>
+/*panolens-end*/
+			
+			viewer.addUpdateCallback(function(){});
+			
+			/*panoramas*/
 
-                <div class="col-lg-4 col-md-4 col-sm-6 col-12">
-                    <article class="blog-sub">
-                        <div class="blog-content">
-                            <img src="../webcraft/nss.png">
-                        </div>
-                        <div class="blog-content-section">
-                            <div class="blo-content-title">
-                                <h4>The National Minimum Wage Is An Important Part</h4>
-                                <p>The installation ceremony of the office bearers of National Service Scheme (NSS), Youth Red Cross (YRC) and Rotaract Club of Shri Madhwa Vadiraja Institute of Technology and Management, Bantakal for the year 2023-24 was held on Wednesday 27 September 2023 in the Institute premises. Officials from Rotary Shankarpura, Vice Principal, Deans, HODs, Staff members and students were present during the function.
+var IMG_20231117_150232316 = new PANOLENS.ImagePanorama( "panoramas/IMG_20231117_150232316.jpg" );
+			IMG_20231117_150232316.addEventListener('progress', onProgress);
+			IMG_20231117_150232316.addEventListener('load', function(e){
+				endLoading();
+			});
+			IMG_20231117_150232316.addEventListener('enter', function(e){
+				endLoading();
+			});
+			IMG_20231117_150232316.addEventListener('click', function(e){
+			});
 
-                                    For the academic year 2023-24, Mr. Swaroop Kumar and Mr. Anshuman were sworn in as the President of NSS-YRC Unit and Rotaract Club respectively; Ms. Ramya Deshapande and Mr. Pratham L Kamath as the secretaries of NSS-YRC Unit and RC respectively.
-                                    
-                                    Mr. Nagaraja Rao, Coordinator of NSS-YRC-RC Unit welcomed the gathering. </p>
-                            </div>
-                            <div class="blog-admin">
-                                <ol>
-                                    <li><i class="fal fa-user-tie"></i> By Admin</li>
-                                    <li><i class="fal fa-calendar-alt"></i> Sept 28, 2023</li>
-                                </ol>
-                            </div>
-                        </div>
-                    </article>
-                </div>
 
-                <div class="col-lg-4 col-md-4 col-sm-6 col-12">
-                    <article class="blog-sub">
-                        <div class="blog-content">
-                            <img src="../webcraft/cyb.png">
-                        </div>
-                        <div class="blog-content-section">
-                            <div class="blo-content-title">
-                                <h4>Two days workshop on “Cyber Security and Ethical Hacking”</h4>
-                                <p>Department of Artificial Intelligence & Data Science, Artificial Intelligence & Machine Learning Engineering, Department of Computer Science Engineering, ISTE & IEEE student chapters of SMVITM in association with National Information and Cyber Security Council (NICC) organized two days workshop on “Cyber Security and Ethical Hacking” on 15 and 16 September 2023 in the institute premises. Dr. Thirumaleshwara Bhat, Principal; in his presidential address expressed his gratitude to the team from National Information and Cyber Security Council (NICC) for imparting such workshop for the benefit of students and urged the participants to get the maximum benefits of the workshop. Mr. Nagaraja Rao, Coordinator of NSS-YRC-RC Unit welcomed the gathering.</p>
-                            </div>
-                            <div class="blog-admin">
-                                <ol>
-                                    <li><i class="fal fa-user-tie"></i> By Admin</li>
-                                    <li><i class="fal fa-calendar-alt"></i> Sept 28, 2023</li>
-                                </ol>
-                            </div>
-                        </div>
-                    </article>
-                </div>
-            </div>
-        </div>
-    </section>
+var infospotIMG_20231117_1502323160 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotIMG_20231117_1502323160.position.set( 4520.93, -1598.65, -1399.25 );
+					IMG_20231117_150232316.add(infospotIMG_20231117_1502323160);
 
-    <!-- ================**Footer**================ -->
+infospotIMG_20231117_1502323160.addEventListener('click', function(){
 
-    <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-3 col-md-3 col-sm-4 col-xs-6">
-                    <div class="_kl_ds_we">
-                        <div class="head-footer">
-                            <img src="assets/images/logo12.png">
-                            <p>ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                                tempor incididunt ut labore et dolore magna aliqua.</p>
-                            <ol>
-                                <li><i class="fab fa-facebook-square"></i></li>
-                                <li><i class="fab fa-instagram"></i></li>
-                                <li><i class="fab fa-twitter-square"></i></li>
-                                <li><i class="fab fa-linkedin"></i></li>
-                            </ol>
-                        </div>
-                    </div>
-                </div>
-    
-                <div class="col-lg-3 col-md-3 col-sm-4 col-xs-6">
-                    <div class="_kl_ds_we">
-                        <div class="head-footer">
-                            <h3>Services</h3>
-                            <ul>
-                                <li><i class="fas fa-chevron-right"></i>Development</li>
-                                <li><i class="fas fa-chevron-right"></i>Busniess</li>
-                                <li><i class="fas fa-chevron-right"></i>Accounting</li>
-                                <li><i class="fas fa-chevron-right"></i>Arts & Design</li>
-                                <li><i class="fas fa-chevron-right"></i>Marketing</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-    
-                <div class="col-lg-3 col-md-3 col-sm-4 col-xs-6">
-                    <div class="_kl_ds_we">
-                        <div class="head-footer">
-                            <h3>Quick links</h3>
-                            <ul>
-                                <li><i class="fas fa-chevron-right"></i>Home</li>
-                                <li><i class="fas fa-chevron-right"></i>About Us</li>
-                                <li><i class="fas fa-chevron-right"></i>Services</li>
-                                <li><i class="fas fa-chevron-right"></i>Blog</li>
-                                <li><i class="fas fa-chevron-right"></i>Contact Us</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-    
-                <div class="col-lg-3 col-md-3 col-sm-4 col-xs-6">
-                    <div class="_kl_ds_we">
-                        <div class="head-footer">
-                            <h3>find us</h3>
-                            <ul class="un-hover">
-                                <li><i class="far fa-location"></i>X to infinity</li>
-                                <li><i class="fas fa-mobile-alt"></i>+91 8971318455</li>
-                                <li><i class="far fa-envelope"></i>xtoinfinity123@gmail.com</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12">
-                    <div class="row _pl_we_sq">
-                        <div class="col-12">
-                            <div class="last-01">
-                                <p>2023 @ All Rights Reserved Designed and developed by<a href="https://www.smarteyeapps.com/">X to Infinity</a></p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
+ChangePanorama('IMG_20231117_151234139');
 
-</body>
-<script src="assets/js/jquery-3.2.1.min.js"></script>
-<script src="assets/js/popper.min.js"></script>
-<script src="assets/js/bootstrap.min.js"></script>
-<script src="assets/js/script.js"></script>
+});
+
+viewer.add( IMG_20231117_150232316 );
+
+var IMG_20231117_151234139 = new PANOLENS.ImagePanorama( "panoramas/IMG_20231117_151234139.jpg" );
+			IMG_20231117_151234139.addEventListener('progress', onProgress);
+			IMG_20231117_151234139.addEventListener('load', function(e){
+				endLoading();
+			});
+			IMG_20231117_151234139.addEventListener('enter', function(e){
+				endLoading();
+			});
+			IMG_20231117_151234139.addEventListener('click', function(e){
+			});
+
+
+var infospotIMG_20231117_1512341390 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotIMG_20231117_1512341390.position.set( -408.55, 151.43, 4972.64 );
+					IMG_20231117_151234139.add(infospotIMG_20231117_1512341390);
+
+infospotIMG_20231117_1512341390.addEventListener('click', function(){
+
+ChangePanorama('IMG_20231117_151513121');
+
+ChangePanorama('IMG_20231117_151513121');
+
+});
+
+var infospotIMG_20231117_1512341391 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotIMG_20231117_1512341391.position.set( 3142.32, -1734.23, 3474.90 );
+					IMG_20231117_151234139.add(infospotIMG_20231117_1512341391);
+
+infospotIMG_20231117_1512341391.addEventListener('click', function(){
+
+ChangePanorama('IMG_20231117_154833969');
+
+});
+
+var infospotIMG_20231117_1512341392 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotIMG_20231117_1512341392.position.set( -3428.95, -1613.66, 3251.09 );
+					IMG_20231117_151234139.add(infospotIMG_20231117_1512341392);
+
+infospotIMG_20231117_1512341392.addEventListener('click', function(){
+
+ChangePanorama('IMG_20231117_152451598');
+
+});
+
+viewer.add( IMG_20231117_151234139 );
+
+var IMG_20231117_151513121 = new PANOLENS.ImagePanorama( "panoramas/IMG_20231117_151513121.jpg" );
+			IMG_20231117_151513121.addEventListener('progress', onProgress);
+			IMG_20231117_151513121.addEventListener('load', function(e){
+				endLoading();
+			});
+			IMG_20231117_151513121.addEventListener('enter', function(e){
+				endLoading();
+			});
+			IMG_20231117_151513121.addEventListener('click', function(e){
+			});
+
+
+var infospotIMG_20231117_1515131210 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotIMG_20231117_1515131210.position.set( 4350.89, -327.61, 2430.93 );
+					IMG_20231117_151513121.add(infospotIMG_20231117_1515131210);
+
+infospotIMG_20231117_1515131210.addEventListener('click', function(){
+
+ChangePanorama('IMG_20231117_151829073');
+
+});
+
+viewer.add( IMG_20231117_151513121 );
+
+var IMG_20231117_151829073 = new PANOLENS.ImagePanorama( "panoramas/IMG_20231117_151829073.jpg" );
+			IMG_20231117_151829073.addEventListener('progress', onProgress);
+			IMG_20231117_151829073.addEventListener('load', function(e){
+				endLoading();
+			});
+			IMG_20231117_151829073.addEventListener('enter', function(e){
+				endLoading();
+			});
+			IMG_20231117_151829073.addEventListener('click', function(e){
+			});
+
+
+var infospotIMG_20231117_1518290730 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotIMG_20231117_1518290730.position.set( -209.26, -1184.03, -4846.14 );
+					IMG_20231117_151829073.add(infospotIMG_20231117_1518290730);
+
+infospotIMG_20231117_1518290730.addEventListener('click', function(){
+
+ChangePanorama('IMG_20231117_152044566');
+
+ChangePanorama('IMG_20231117_152044566');
+
+});
+
+var infospotIMG_20231117_1518290731 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotIMG_20231117_1518290731.position.set( -4601.91, -1839.05, -608.61 );
+					IMG_20231117_151829073.add(infospotIMG_20231117_1518290731);
+
+infospotIMG_20231117_1518290731.addEventListener('click', function(){
+
+ChangePanorama('IMG_20231117_151234139');
+
+});
+
+viewer.add( IMG_20231117_151829073 );
+
+var IMG_20231117_152044566 = new PANOLENS.ImagePanorama( "panoramas/IMG_20231117_152044566.jpg" );
+			IMG_20231117_152044566.addEventListener('progress', onProgress);
+			IMG_20231117_152044566.addEventListener('load', function(e){
+				endLoading();
+			});
+			IMG_20231117_152044566.addEventListener('enter', function(e){
+				endLoading();
+			});
+			IMG_20231117_152044566.addEventListener('click', function(e){
+			});
+
+
+var infospotIMG_20231117_1520445660 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotIMG_20231117_1520445660.position.set( -2638.98, -2463.51, -3448.40 );
+					IMG_20231117_152044566.add(infospotIMG_20231117_1520445660);
+
+infospotIMG_20231117_1520445660.addEventListener('click', function(){
+
+ChangePanorama('IMG_20231117_151829073');
+
+});
+
+viewer.add( IMG_20231117_152044566 );
+
+var IMG_20231117_152451598 = new PANOLENS.ImagePanorama( "panoramas/IMG_20231117_152451598.jpg" );
+			IMG_20231117_152451598.addEventListener('progress', onProgress);
+			IMG_20231117_152451598.addEventListener('load', function(e){
+				endLoading();
+			});
+			IMG_20231117_152451598.addEventListener('enter', function(e){
+				endLoading();
+			});
+			IMG_20231117_152451598.addEventListener('click', function(e){
+			});
+
+
+var infospotIMG_20231117_1524515980 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotIMG_20231117_1524515980.position.set( 4742.64, -922.22, 1247.27 );
+					IMG_20231117_152451598.add(infospotIMG_20231117_1524515980);
+
+infospotIMG_20231117_1524515980.addEventListener('click', function(){
+
+ChangePanorama('IMG_20231117_152738172');
+
+});
+
+var infospotIMG_20231117_1524515981 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotIMG_20231117_1524515981.position.set( -4243.04, -1901.97, 1830.71 );
+					IMG_20231117_152451598.add(infospotIMG_20231117_1524515981);
+
+infospotIMG_20231117_1524515981.addEventListener('click', function(){
+
+ChangePanorama('IMG_20231117_151234139');
+
+});
+
+var infospotIMG_20231117_1524515982 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotIMG_20231117_1524515982.position.set( -2286.49, -3034.38, -3242.13 );
+					IMG_20231117_152451598.add(infospotIMG_20231117_1524515982);
+
+infospotIMG_20231117_1524515982.addEventListener('click', function(){
+
+ChangePanorama('IMG_20231117_152934470');
+
+});
+
+viewer.add( IMG_20231117_152451598 );
+
+var IMG_20231117_153114842 = new PANOLENS.ImagePanorama( "panoramas/IMG_20231117_153114842.jpg" );
+			IMG_20231117_153114842.addEventListener('progress', onProgress);
+			IMG_20231117_153114842.addEventListener('load', function(e){
+				endLoading();
+			});
+			IMG_20231117_153114842.addEventListener('enter', function(e){
+				endLoading();
+			});
+			IMG_20231117_153114842.addEventListener('click', function(e){
+			});
+
+
+var infospotIMG_20231117_1531148420 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotIMG_20231117_1531148420.position.set( 510.59, -3861.90, 3125.56 );
+					IMG_20231117_153114842.add(infospotIMG_20231117_1531148420);
+
+infospotIMG_20231117_1531148420.addEventListener('click', function(){
+
+ChangePanorama('IMG_20231117_153256794');
+
+});
+
+viewer.add( IMG_20231117_153114842 );
+
+var IMG_20231117_153256794 = new PANOLENS.ImagePanorama( "panoramas/IMG_20231117_153256794.jpg" );
+			IMG_20231117_153256794.addEventListener('progress', onProgress);
+			IMG_20231117_153256794.addEventListener('load', function(e){
+				endLoading();
+			});
+			IMG_20231117_153256794.addEventListener('enter', function(e){
+				endLoading();
+			});
+			IMG_20231117_153256794.addEventListener('click', function(e){
+			});
+
+
+var infospotIMG_20231117_1532567940 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotIMG_20231117_1532567940.position.set( -3612.37, -2687.91, 2161.88 );
+					IMG_20231117_153256794.add(infospotIMG_20231117_1532567940);
+
+infospotIMG_20231117_1532567940.addEventListener('click', function(){
+
+ChangePanorama('IMG_20231117_152451598');
+
+});
+
+viewer.add( IMG_20231117_153256794 );
+
+var IMG_20231117_152934470 = new PANOLENS.ImagePanorama( "panoramas/IMG_20231117_152934470.jpg" );
+			IMG_20231117_152934470.addEventListener('progress', onProgress);
+			IMG_20231117_152934470.addEventListener('load', function(e){
+				endLoading();
+			});
+			IMG_20231117_152934470.addEventListener('enter', function(e){
+				endLoading();
+			});
+			IMG_20231117_152934470.addEventListener('click', function(e){
+			});
+
+
+var infospotIMG_20231117_1529344700 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotIMG_20231117_1529344700.position.set( 4928.27, -787.86, -172.40 );
+					IMG_20231117_152934470.add(infospotIMG_20231117_1529344700);
+
+infospotIMG_20231117_1529344700.addEventListener('click', function(){
+
+ChangePanorama('IMG_20231117_153114842');
+
+});
+
+var infospotIMG_20231117_1529344701 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotIMG_20231117_1529344701.position.set( -4121.59, -2303.19, -1625.44 );
+					IMG_20231117_152934470.add(infospotIMG_20231117_1529344701);
+
+infospotIMG_20231117_1529344701.addEventListener('click', function(){
+
+});
+
+var infospotIMG_20231117_1529344702 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotIMG_20231117_1529344702.position.set( -3287.59, -841.85, -3668.39 );
+					IMG_20231117_152934470.add(infospotIMG_20231117_1529344702);
+
+infospotIMG_20231117_1529344702.addEventListener('click', function(){
+
+ChangePanorama('IMG_20231117_153506117');
+
+});
+
+viewer.add( IMG_20231117_152934470 );
+
+var IMG_20231117_153506117 = new PANOLENS.ImagePanorama( "panoramas/IMG_20231117_153506117.jpg" );
+			IMG_20231117_153506117.addEventListener('progress', onProgress);
+			IMG_20231117_153506117.addEventListener('load', function(e){
+				endLoading();
+			});
+			IMG_20231117_153506117.addEventListener('enter', function(e){
+				endLoading();
+			});
+			IMG_20231117_153506117.addEventListener('click', function(e){
+			});
+
+
+var infospotIMG_20231117_1535061170 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotIMG_20231117_1535061170.position.set( 705.65, -26.62, -4942.57 );
+					IMG_20231117_153506117.add(infospotIMG_20231117_1535061170);
+
+infospotIMG_20231117_1535061170.addEventListener('click', function(){
+
+ChangePanorama('IMG_20231117_154833969');
+
+});
+
+viewer.add( IMG_20231117_153506117 );
+
+var IMG_20231117_154833969 = new PANOLENS.ImagePanorama( "panoramas/IMG_20231117_154833969.jpg" );
+			IMG_20231117_154833969.addEventListener('progress', onProgress);
+			IMG_20231117_154833969.addEventListener('load', function(e){
+				endLoading();
+			});
+			IMG_20231117_154833969.addEventListener('enter', function(e){
+				endLoading();
+			});
+			IMG_20231117_154833969.addEventListener('click', function(e){
+			});
+
+
+var infospotIMG_20231117_1548339690 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotIMG_20231117_1548339690.position.set( -4573.73, -1965.89, -409.72 );
+					IMG_20231117_154833969.add(infospotIMG_20231117_1548339690);
+
+infospotIMG_20231117_1548339690.addEventListener('click', function(){
+
+ChangePanorama('IMG_20231117_151234139');
+
+});
+
+viewer.add( IMG_20231117_154833969 );
+
+var IMG_20231117_152738172 = new PANOLENS.ImagePanorama( "panoramas/IMG_20231117_152738172.jpg" );
+			IMG_20231117_152738172.addEventListener('progress', onProgress);
+			IMG_20231117_152738172.addEventListener('load', function(e){
+				endLoading();
+			});
+			IMG_20231117_152738172.addEventListener('enter', function(e){
+				endLoading();
+			});
+			IMG_20231117_152738172.addEventListener('click', function(e){
+			});
+
+
+var infospotIMG_20231117_1527381720 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotIMG_20231117_1527381720.position.set( -268.59, -4033.76, -2939.22 );
+					IMG_20231117_152738172.add(infospotIMG_20231117_1527381720);
+
+infospotIMG_20231117_1527381720.addEventListener('click', function(){
+
+ChangePanorama('IMG_20231117_152451598');
+
+});
+
+viewer.add( IMG_20231117_152738172 );
+
+$(document).ready(function(){ ChangePanorama('IMG_20231117_150232316'); });
+
+
+/*panoramas-end*/
+            
+			var stilloading = true;
+			function onProgress ( event ) {
+				
+				progress = event.progress.loaded / event.progress.total * 100;
+				console.log("Loading panorama: " + progress + " ... ");
+				$("#loadingperc").html(Math.ceil(progress) + "%");
+				if(Math.ceil(progress) >= 100){
+					endLoading();
+					stilloading = false;
+
+				}else{
+				    clearTimeout(elTimer);
+					stilloading = true;
+					$("#loading").show();
+				}
+			}
+			
+			var elTimer;
+			function endLoading(){
+			    clearTimeout(elTimer);
+				if(stilloading == false){
+					elTimer = setTimeout(function(){
+						$("#loading").fadeOut();
+					}, 750);
+					
+				}
+			}
+			
+			function hideTemp(){
+				$("#tmp").fadeOut();
+				setTimeout(function(){
+					$("#tmpcontent").html("");
+				},1000);
+			}
+			
+			function showMedia(type, content){
+				switch(type){
+					case 1 :
+						//Image
+						$("#tmpcontent").html("<img src='"+content+"' style='width: 100%;'>");
+						$("#tmp").fadeIn();
+						break;
+					case 2 :
+						//Video
+						$("#tmpcontent").html("<video id='webvideo' controls autoplay style='width: 100%; height: 100%;'><source src='" +content+ "' type='video/mp4'> Your browser does not support the video tag. </video>");
+						$("#tmp").fadeIn();
+						break;
+					case 3 :
+						//Audio
+						$("#tmpcontent").html("<audio controls style='width: 100%;'><source src='"+content+"' type='audio/ogg'>Your browser does not support the audio tag.</audio>");
+						$("#tmp").fadeIn();
+						break;
+					case 4 :
+						//PDF
+						$("#tmpcontent").html("<iframe src='pdfjs/web/viewer.html?file=../../"+content+"' style='width: 100%; height: 99%;'></iframe>");
+						$("#tmp").fadeIn();
+						break;
+				}
+			}
+			
+			
+			
+			//Update Callback
+			viewer.addUpdateCallback(function(){
+				
+				/*viewerupdatecallback*/
+if(viewer.panorama == IMG_20231117_150232316){
+}
+
+if(viewer.panorama == IMG_20231117_151234139){
+}
+
+if(viewer.panorama == IMG_20231117_151513121){
+}
+
+if(viewer.panorama == IMG_20231117_151829073){
+}
+
+if(viewer.panorama == IMG_20231117_152044566){
+}
+
+if(viewer.panorama == IMG_20231117_152451598){
+}
+
+if(viewer.panorama == IMG_20231117_153114842){
+}
+
+if(viewer.panorama == IMG_20231117_153256794){
+}
+
+if(viewer.panorama == IMG_20231117_152934470){
+}
+
+if(viewer.panorama == IMG_20231117_153506117){
+}
+
+if(viewer.panorama == IMG_20231117_154833969){
+}
+
+if(viewer.panorama == IMG_20231117_152738172){
+}
+/*viewerupdatecallback-end*/
+				
+				
+			});
+			
+			
+			
+			var hotspotsvisible = true;
+			function ShowMyInfospot(hs, elid){
+				var thehs = toScreenPosition(hs);
+				if(thehs.z < 1){
+					$("#" + elid).css({
+						"top" : (thehs.y - ($("#" + elid).height()/2)) + "px",
+						"left" : (thehs.x - ($("#" + elid).width()/2)) + "px",
+					});
+					if(hotspotsvisible)
+						$("#" + elid).show();
+				}else{
+					$("#" + elid).hide();
+				}
+				
+			}
+			
+			function toScreenPosition(obj)
+			{
+				var vector = new THREE.Vector3();
+				var widthHalf = 0.5 * innerWidth;
+				var heightHalf = 0.5 * innerHeight;
+				
+				//obj.updateMatrixWorld();				
+				vector.setFromMatrixPosition(obj.matrixWorld);
+				
+				
+				vector.project(viewer.camera);
+
+				vector.x = ( vector.x * widthHalf ) + widthHalf;
+				vector.y = - ( vector.y * heightHalf ) + heightHalf;
+
+				
+				return { 
+					x: vector.x,
+					y: vector.y,
+					z: vector.z,
+				};
+
+			};
+			
+			var currentPanorama;
+			function ChangePanorama(panorama){
+				currentPanorama = panorama;
+				HideInfospots(); 
+				$("#loading").fadeIn();
+				//$(".customhotspot").fadeOut();
+				setTimeout(function(){
+					viewer.setPanorama(window[panorama]);
+				}, 100);
+				setTimeout(function(){
+					$("#" + panorama).fadeIn();
+				}, 1000);
+				
+			}
+			
+			
+			
+			
+			
+			function HideInfospots(){
+				$(".customhotspot").fadeOut();
+			}
+
+			/*customjs*//*customjs-end*/
+        </script>
+	</body>
 </html>

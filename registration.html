@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible"
+		content="IE=edge">
+	<meta name="viewport"
+		content="width=device-width, initial-scale=1.0">
+	<title>
+		Build a Survey Form using HTML and CSS
+	</title>
+
+	<style>
+
+		/* Styling the Body element i.e. Color, 
+		Font, Alignment */ 
+		body {
+			background-image: url('./back.avif');
+			font-family: 'Times New Roman', Times, serif;
+			text-align: center;
+		}
+    
+        h1 {
+  
+  color: #000;
+  box-sizing: border-box;
+  padding: 20px;
+  border-radius: 30px;
+}
+
+		/* Styling the Form (Color, Padding, Shadow) */
+		form {
+			background-color: #e7e7e9;
+			max-width: 500px;
+            color: black;
+			margin: 50px auto;
+			padding: 30px 20px;
+			box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
+            border-radius: 20px;
+		}
+
+		/* Styling form-control Class */
+		.form-control {
+			text-align: left;
+			margin-bottom: 25px;
+            border-radius: 20px;
+		}
+
+		/* Styling form-control Label */ 
+		.form-control label {
+			display: block;
+			margin-bottom: 10px;
+		}
+
+		/* Styling form-control input, 
+		select, textarea */
+		.form-control input,
+		.form-control select,
+		.form-control textarea {
+			border: 1px solid #777;
+			border-radius: 2px;
+			font-family: inherit;
+			padding: 10px;
+			display: block;
+			width: 95%;
+		}
+
+		/* Styling form-control Radio 
+		button and Checkbox */
+		.form-control input[type="radio"],
+		.form-control input[type="checkbox"] {
+			display: inline-block;
+			width: auto;
+		}
+
+		/* Styling Button */
+		button {
+			background-color: #2205c4;
+			border: 1px solid #777;
+			border-radius: 90px;
+			font-family: inherit;
+			font-size: 21px;
+			display: block;
+			width: 100%;
+			margin-top: 50px;
+			margin-bottom: 20px;
+		}
+        .form-control input[type="checkbox"] {
+                display: inline-block;
+                width: auto;
+            }
+            .form-control input[type="checkbox"] {
+            display: inline-block;
+            width: auto;
+        }
+	</style>
+
+</head>
+
+<body>
+	<h1>Varnotsava 2023</h1>
+
+	<!-- Create Form -->
+	<form id="form">
+
+		<!-- Details -->
+		<div class="form-control">
+			<label for="name" id="label-name">
+				Name
+			</label>
+
+			<!-- Input Type Text -->
+			<input type="text"
+				id="name"
+				placeholder="Enter your name" />
+		</div>
+
+		<div class="form-control">
+			<label for="email" id="label-email">
+				Email
+			</label>
+
+			<!-- Input Type Email-->
+			<input type="email"
+				id="email"
+				placeholder="Enter your email" />
+		</div>
+
+		<div class="form-control">
+			<label for="age" id="label-age">
+				College Name
+			</label>
+
+			<!-- Input Type Text -->
+			<input type="text"
+				id="age"
+				placeholder="College name" />
+		</div>
+
+		<div class="form-control">
+			<label for="role" id="label-role">
+				USN(If not applicable type NA)
+			</label>
+            <input type="text"
+            id="age"
+            placeholder="USN" />
+			<!-- Dropdown options -->
+
+		</div>
+
+		<div class="form-control">
+			<label>
+                Number of solo events selected
+			</label>
+            <select name="role" id="role">
+				<option value="student"></option>
+				<option value="intern">0</option>
+                <option value="intern">1</option>
+                <option value="intern">2</option>
+                <option value="intern">3</option>
+                <option value="intern">4</option>
+			</select>
+		</div>
+        <div class="form-control">
+			<label>
+                Number of Group events selected
+			</label>
+            <select name="role" id="role">
+				<option value="student"></option>
+				<option value="intern">0</option>
+                <option value="intern">1</option>
+                <option value="intern">2</option>
+                <option value="intern">3</option>
+                <option value="intern">4</option>
+			</select>
+		</div>
+
+
+		<div class="form-control">
+			<label>Participating Events
+				<small>(Check 4 that apply)</small>
+			</label>
+			<!-- Input Type Checkbox -->
+			<label for="inp-1">
+				<input type="checkbox"
+					name="inp">Pada Yatra - Solo singing Classical</input></label>
+			<label for="inp-2">
+				<input type="checkbox"
+					name="inp">Nanna Haadu - Light Vocal Solo(Indian)</input></label>
+			<label for="inp-3">
+				<input type="checkbox"
+					name="inp">Geeta Gayana -Group Song(Indian)</input></label>
+			<label for="inp-4">
+				<input type="checkbox"
+					name="inp">Rocking Rhythm -Group Song(Western)</input></label>
+			<label for="inp-5">
+				<input type="checkbox"
+					name="inp">Boom Boom -Solo Dance (Indian/Western)</input></label>
+			<label for="inp-6">
+				<input type="checkbox"
+					name="inp">Natya -Group Dance (Indian/Western)</input></label>
+			<label for="inp-7">
+				<input type="checkbox"
+					name="inp">Click Click -Spot Photography</input></label>
+			<label for="inp-7">
+				<input type="checkbox"
+					name="inp">Rangitaranga -Face Painting</input></label>
+			<label for="inp-7">
+				<input type="checkbox"
+					name="inp">Chittara -Canvas Painting</input></label>
+			<label for="inp-7">
+				<input type="checkbox"
+					name="inp">BGMI</input></label>
+                    <label for="inp-7">
+                        <input type="checkbox"
+                            name="inp">Robo Soccer</input></label>
+                            <label for="inp-7">
+                                <input type="checkbox"
+                                    name="inp">Code Troopers Code Contest</input></label>
+		</div>
+
+		<div class="form-control">
+			<label for="comment">
+				Any comments or suggestions
+			</label>
+
+			<!-- multi-line text input control -->
+			<textarea name="comment" id="comment"
+				placeholder="Enter your comment here">
+			</textarea>
+		</div>
+
+		<!-- Multi-line Text Input Control -->
+		<button type="submit" value="submit">
+			Submit
+		</button>
+	</form>
+   
+    <script>
+        function validateForm() {
+            var name = document.getElementById('name');
+            var email = document.getElementById('email');
+            var age = document.getElementById('age');
+            var comment = document.getElementById('comment');
+
+            if (!name.value) {
+                alert('Please enter your name.');
+                name.focus();
+                return false;
+            }
+
+            if (!email.value) {
+                alert('Please enter your email address.');
+                email.focus();
+                return false;
+            }
+
+            if (!isValidEmail(email.value)) {
+                alert('Please enter a valid email address.');
+                email.focus();
+                return false;
+            }
+
+            if (!age.value) {
+                alert('Please enter your college name.');
+                age.focus();
+                return false;
+            }
+
+            if (!comment.value) {
+                alert('Please enter your comment or suggestions.');
+                comment.focus();
+                return false;
+            }
+
+            // Check the number of checkboxes selected
+            var checkboxes = document.querySelectorAll('input[type="checkbox"]:checked');
+            if (checkboxes.length > 4) {
+                alert('Please select a maximum of 4 events.');
+                return false;
+            }
+
+            return true;
+        }
+
+        function isValidEmail(email) {
+            var regex = /^[\w-.]+@([\w-]+\.)+[\w-]{2,4}$/;
+            return regex.test(email);
+        }
+    </script>
+</body>
+</html>

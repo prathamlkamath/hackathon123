@@ -1,0 +1,168 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+header {
+    z-index: 999;
+    position: fixed; /* Changed to fixed for better mobile navigation */
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 10px; /* Adjusted padding for smaller screens */
+    transition: 0.5s ease;
+}
+
+header .brand {
+    color: #fff;
+    font-size: 1.2em; /* Adjusted font size for smaller screens */
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+header .navigation {
+    position: relative;
+}
+
+header .navigation .navigation-items a {
+    position: relative;
+    color: #fff;
+    font-size: 0.9em; /* Adjusted font size for smaller screens */
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 15px; /* Adjusted margin for smaller screens */
+    transition: 0.3s ease;
+}
+
+header .navigation .navigation-items a:before {
+    content: '';
+    position: absolute;
+    background: #fff;
+    width: 0;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    transition: 0.3s ease;
+}
+
+header .navigation .navigation-items a:hover:before {
+    width: 100%;
+}
+
+section {
+    padding: 50px 10px; /* Adjusted padding for smaller screens */
+}
+
+.home {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background: #2696E9;
+    font-family: 'Josepin Sans Bold Italic';
+}
+
+.home .content {
+    z-index: 888;
+    color: #fff;
+    width: 90%; /* Adjusted width for better readability on smaller screens */
+    margin-top: 30px; /* Adjusted margin for smaller screens */
+}
+
+.fab fa-facebook-f {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+}
+
+p {
+    line-height: 1.35em;
+    font-family: 'Josepin Sans Bold Italic';
+}
+
+.home .content h1 {
+    font-size: 2.5em; /* Adjusted font size for smaller screens */
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    line-height: 60px;
+    margin-bottom: 20px;
+    font-family: 'Proxima Nova Cond Regular';
+}
+
+.home .content h1 span {
+    font-size: 0.9em; /* Adjusted font size for smaller screens */
+    font-weight: 600;
+    font-family: 'Proxima Nova Cond Regular';
+}
+
+.home .content p {
+    margin-bottom: 30px;
+}
+
+.home .content a {
+    padding: 12px 25px;
+    font-size: 1em;
+    font-weight: 500;
+    text-decoration: none;
+    border-radius: 2px;
+}
+
+.home .media-icons {
+    z-index: 888;
+    position: absolute;
+    right: 10px; /* Adjusted right position for smaller screens */
+    display: flex;
+    flex-direction: column;
+    transform: 0.5s ease;
+}
+
+.home .media-icons a {
+    color: #000;
+    font-size: 1.2em;
+    transition: 0.3s ease;
+}
+
+.home .media-icons a:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+.home .media-icons a:hover {
+    transform: scale(1.3);
+}
+
+.home video {
+    z-index: 0; /* Changed z-index to 0 for better layering */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@media (max-width: 767px) {
+    header {
+        padding: 12px 10px;
+    }
+
+    .home .media-icons {
+        right: 10px;
+    }
+
+    section {
+        padding: 50px 10px;
+    }
+
+    .home .content {
+        width: 100%;
+    }
+}

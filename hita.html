@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Messages | Firebase</title>
+    <link rel="stylesheet" href="./style28.css">
+</head>
+
+<body>
+    <h1>Doctor Data</h1>
+
+    <div class="container">
+        <form id="contactForm">
+            <div class="inputBox">
+                <input type="text" id="name" placeholder="Your name...." required />
+            </div>
+            <br>
+            <div class="inputBox">
+                <button type="button" onclick="fetchData()">Submit</button>
+            </div>
+        </form>
+        <div id="result"></div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1/firebase.js"></script>
+    <script>
+        // Initialize Firebase with your configuration
+        const firebaseConfig = {
+            apiKey: "AIzaSyCSc8gl4GBXz0mMBYapCkFGJuiHUjagj5k",
+            authDomain: "contact-ae302.firebaseapp.com",
+            databaseURL: "https://contact-ae302-default-rtdb.firebaseio.com",
+            projectId: "contact-ae302",
+            storageBucket: "contact-ae302.appspot.com",
+            messagingSenderId: "679069102741",
+            appId: "1:679069102741:web:e9d321859aa5cf32d7e19c",
+        };
+
+        firebase.initializeApp(firebaseConfig);
+
+        // Function to retrieve data for a particular name
+        function fetchData() {
+            const name = document.getElementById('name').value;
+            const dataRef = firebase.database().ref('contactForm');
+
+            dataRef.orderByChild('name').equalTo(name).once('value')
+                .then(snapshot => {
+                    const resultDiv = document.getElementById('result');
+                    resultDiv.innerHTML = ''; // Clear previous content
+
+                    if (snapshot.exists()) {
+                        const data = snapshot.val();
+                        for (const key in data) {
+                            if (data.hasOwnProperty(key)) {
+                                const item = data[key];
+                                // Create HTML elements for each data item
+                                const itemDiv = document.createElement('div');
+                                itemDiv.innerHTML = `<p>Name: ${item.name}</p><p>Email: ${item.email}</p><p>Message: ${item.message}</p>`;
+                                resultDiv.appendChild(itemDiv);
+                            }
+                        }
+                    } else {
+                        resultDiv.innerText = 'No data found for ' + name;
+                    }
+                })
+                .catch(error => {
+                    console.error('Error retrieving data:', error.message);
+                });
+        }
+    </script>
+</body>
+
+</html>

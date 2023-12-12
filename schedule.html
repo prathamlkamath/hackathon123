@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Shopping Dresses</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            background-color: #000;
+            color: #fff;
+            padding: 20px;
+            border-radius: 20px;
+            text-align: center;
+
+        }
+
+        h1 {
+            margin: 0;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .dress-card {
+            width: 250px;
+            background-color: #f9f9f9;
+            margin: 10px;
+            padding: 30px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        #zyx {
+            width: 160px;
+            background-color: #f9f9f9;
+            margin: 10px;
+            padding: 20px;
+            border-radius: 50px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        #zyx img{
+            width: 160px;
+            height: 200px;
+        }
+        #pratham{
+            width: 200px;
+            background-color: #f9f9f9;
+            margin: 10px;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px width 160px;
+            padding: 20px;
+
+            border: none;
+            padding: 20px;
+            border-radius: 00px;
+            width: 160px;
+            background-color: #f9f9f9;
+            margin: 10px;
+            padding: 20px;
+            border-radius: 50px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+
+        }
+        #pratham img{
+            width:160px;
+            height: 200px;
+            
+
+        
+        }
+        #pk{
+            width: 200px;
+            background-color: #f9f9f9;
+            margin: 10px;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            width: 160px;
+            padding: 20px;
+
+            border: none;
+            padding: 20px;
+            border-radius: 00px;
+            width: 160px;
+            background-color: #f9f9f9;
+            margin: 10px;
+            padding: 20px;
+            border-radius: 50px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+
+        }
+        #pk img{
+            width: 160px;
+            height: 200px;
+        }
+
+
+
+
+        .dress-card img {
+            width: 100%;
+            height: auto;
+            margin-bottom: 10px;
+        }
+
+        .dress-card h2 {
+            font-size: 18px;
+            margin: 0;
+        }
+
+        .dress-card p {
+            color: #666;
+        }
+
+        .dress-card button {
+            background-color: #333;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+        #dinnu{
+            width:150px;
+            height: 50px;
+            text-align: center;
+            
+            background-color: #333;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 3px;
+            cursor: pointer;
+            
+        }
+        #kku{
+            width: 160pxpx;
+            height: 50px;
+            text-align: center;
+            
+            background-color: #333;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 100px;
+            cursor: pointer;
+            text-decoration: dashed;
+            align-items: center;
+
+        }
+        #kku img{
+            width: 100px;
+            height: 0px;
+            margin-bottom: 10px;
+
+        }
+        #ppk{
+            width: 160px;
+            padding: 20px;
+
+            border: none;
+            padding: 20px;
+            border-radius: 00px;
+            width: 160px;
+            background-color: #f9f9f9;
+            margin: 10px;
+            padding: 20px;
+            border-radius: 50px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+
+        }
+        #ppk img{
+            width: 160px;
+            height: 200px;
+            
+        }
+        #kkk{
+            width: 160pxpx;
+            height: 50px;
+            text-align: center;
+            
+            background-color: #333;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 100px;
+            cursor: pointer;
+            text-decoration: dashed;
+            align-items: center;
+
+        }
+        #ck{
+            width: 200px;
+            background-color: #f9f9f9;
+            margin: 10px;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            width: 160px;
+            padding: 20px;
+
+            border: none;
+            padding: 20px;
+            border-radius: 00px;
+            width: 160px;
+            background-color: #f9f9f9;
+            margin: 10px;
+            padding: 20px;
+            border-radius: 50px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+
+        }
+        #ck img{
+            width: 160px;
+            height: 200px;
+        }
+        @media (max-width: 768px) {
+      .dress-card {
+        width: 200px;
+      }
+    }
+    .dress-card-animation {
+      animation-name: slide-in-up;
+      animation-duration: 0.5s;
+      animation-timing-function: ease-in-out;
+      animation-fill-mode: forwards;
+    }
+    .dress-card.is-hidden {
+      opacity: 0;
+      transform: translateY(50px);
+    }
+
+    .dress-card:hover {
+      transform: scale(1.05);
+    }
+    @keyframes slide-in-up {
+      from {
+        opacity: 0;
+        transform: translateY(50px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @media (max-width: 576px) {
+      .dress-card {
+        width: 150px;
+      }
+    }
+    body {
+  background-image: url("./tusk.avif");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Schedule</h1>
+    </header>
+ 
+    <form action="./try.html">
+    <div class="container">
+        <div class="dress-card" id="ppk">
+            <img src="./task1.jpeg" height="100"  alt="Dress 1">
+            <h2>ElectroWiz</h2>
+            <br>
+            <p> </p>
+            <a href="./dressk1.html"class="dress-card" id="kku">Details</a>
+            
+        </div>
+        <div class="dress-card" id="zyx">
+            <img src="./task2.png" height="100" alt="Dress 2">
+            
+            <h2>WattQuest</h2>
+            <br>
+            <p></p>
+                <a href="./dressk2.html"class="dress-card" id="kku">Details</a>
+        </div>
+        <div class="dress-card" id="pratham">
+            <img src="./task3.jpeg" alt="Dress 3">
+            <h2> Code
+                Troopers
+                Code Rush
+                 </h2>
+            <p></p>
+            <a href="./dressk3.html"class="dress-card" id="kku">Details</a>
+            
+        </div>
+        <div class="dress-card" id="pk">
+            <img src="./task4.jpeg" alt="Dress 3">
+            <h2>BugBane
+                Brawl
+                </h2>
+            <br>
+            <p></p>
+            
+            
+            <a href="./dress4.html"class="dress-card" id="kkk">Details</a>
+        </div>
+        
+        <div class="dress-card" id="pk">
+            <img src="./task5.jpeg" alt="Dress 3">
+            <h2>TechnoQuiz</h2>
+            <br>
+            <p></p>
+            <a href="./dress5.html"class="dress-card" id="kku">Details</a>
+        </div>
+        <div class="dress-card" id="pk">
+            <img src="./task6.jpeg" alt="Dress 3">
+            <h2>Robo Soccer</h2>
+            <br>
+            <p></p>
+            
+            <a href="./dress6.html"class="dress-card" id="kku">Details</a>
+        </div>
+        <div class="dress-card" id="pk">
+            <img src="./task7.jpeg" alt="Dress 3">
+            <h2>BGMI </h2>
+            <p></p>
+            
+            <a href="./dress7.html"class="dress-card" id="kku">Details</a>
+        </div>
+        <div class="dress-card" id="ck">
+            <img src="./task8.jpeg" alt="Dress 3">
+            <h2>     Line
+                Follower </h2>
+            <p></p>
+            
+            <a href="./dress7.html"class="dress-card" id="kku">Details</a>
+        </div>
+        <div class="dress-card" id="ck">
+            <img src="./task9.jpeg" alt="Dress 3">
+            <h2>TECH-JAM</h2>
+            <p></p>
+            
+            <a href="./dress7.html"class="dress-card" id="kku">Details</a>
+        </div>
+    </div>
+   
+
+</form>
+</body>
+</html>

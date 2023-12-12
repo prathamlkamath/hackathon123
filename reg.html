@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Varnotsava Registration</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-image: url('./backgr.avif');
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        .container {
+            background-color: #ffffff;
+            border-radius: 15px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            width: 700px;
+            text-align: center;
+        }
+
+        h1 {
+            color: #333333;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        div {
+            margin-bottom: 15px;
+        }
+
+        input {
+            width: 600px;
+            padding: 10px;
+            box-sizing: border-box;
+            border: 1px solid #cccccc;
+            border-radius: 4px;
+            margin-top: 5px;
+            font-size: 14px;
+        }
+
+        button {
+            background-color: #4caf50;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Varnotsava Registration</h1>
+        <form onsubmit="signup(event)">
+            <div>
+                <input type="text" name="" id="firstname" placeholder="First Name">
+            </div>
+            <div>
+                <input type="text" name="" id="lastname" placeholder="Last Name">
+            </div>
+            <div>
+                <input type="email" name="" id="Email" placeholder="Email">
+            </div>
+            <div>
+                <input type="password" name="" id="password" placeholder="Password">
+            </div>
+            <div>
+                <input type="text" name="" id="college" placeholder="college name">
+            </div>
+
+            <button id="sinuinp" value="Signup">Register</button>
+        </form>
+    </div>
+</body>
+<script src="app.js" type="module"></script>
+
+</html>
