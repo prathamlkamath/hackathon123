@@ -1,0 +1,40 @@
+table,th,tr{
+    border: 1px solid black;
+    border-collapse: collapse;
+    text-align: center;  
+    padding: 12px;
+    
+
+}
+table{
+    border: 5px solid rgb(11, 106, 147);
+    background-color:lightcyan ;
+}
+
+thead{
+   background-color: lightsteelblue;
+}
+.caption{
+    font-weight: 900;
+    font-size: larger;
+    margin:10px;
+
+}
+
+.row-lunch{
+    font-weight: 600;
+
+}
+
+.row-break{
+    font-weight: 600;    
+}
+
+.dayy{
+    background-color:  lightpink  ;
+}
+
+.day{
+    background-color:lightpink  ;
+}
+    

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registration Form</title>
+</head>
+<style>
+    body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+form {
+  width: 500px;
+  margin: 0 auto;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input, select, textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+input[type="file"] {
+  border: none;
+  padding: 0;
+}
+
+button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0069d9;
+}
+
+</style>
+<body>
+  <h1>Registration Form</h1>
+  <form action="submit.php" method="post">
+    <label for="username">User Name:</label>
+    <input type="text" id="username" name="username" required>
+    <br>
+
+    <label for="phone_number">Phone Number:</label>
+    <input type="tel" id="phone_number" name="phone_number" required>
+    <br>
+
+    <label for="email_id">Email ID:</label>
+    <input type="email" id="email_id" name="email_id" required>
+    <br>
+
+    <label for="college_name">College Name:</label>
+    <input type="text" id="college_name" name="college_name" required>
+    <br>
+
+    <label for="usn">USN:</label>
+    <input type="text" id="usn" name="usn" required>
+    <br>
+
+    <label for="participating_event">Participating Event:</label>
+    <select name="participating_event[]" size="4" multiple required>
+      <option value="ElectroWiz">ElectroWiz</option>
+      <option value="WattQuest">WattQuest</option>
+      <option value="Code_Troopers_Code_Rush">Code Troopers Code Rush</option>
+      <option value="BugBane_Brawl">BugBane Brawl</option>
+      <option value="TechnoQuiz">TechnoQuiz</option>
+      <option value="Robo_Soccer">Robo Soccer</option>
+      <option value="BGMI">BGMI</option>
+      <option value="Line_Follower">Line Follower</option>
+      <option value="TECH-JAM">TECH-JAM</option>
+    </select>
+    <br>
+
+    <label for="payment_qr_code_image">Payment QR Code Image:</label>
+    <input type="file" id="payment_qr_code_image" name="payment_qr_code_image" required>
+    <br>
+
+    <button type="submit">Submit</button>
+  </form>
+  <script>const participatingEventSelect = document.getElementById('participatingEvent');
+    const eventCountSpan = document.getElementById('eventCount');
+    
+    participatingEventSelect.addEventListener('change', updateEventCount);
+    
+    function updateEventCount() {
+      const selectedEventCount = participatingEventSelect.selectedOptions.length;
+      eventCountSpan.textContent = `Selected Events: ${selectedEventCount}`;
+    }
+    </script>
+</body>
+</html>
